@@ -13,6 +13,9 @@ exports.update = (req,res)=>{
 exports.delete = (req,res)=>{
     res.send({message:"delete handle"});
 }
+exports.deleteAll = (req,res)=>{
+    res.send({message:"deleteAll handle"});
+}
 exports.findAllFavorite = (req,res)=>{
     res.send({message:"findAllFavorite handle"});
 }
