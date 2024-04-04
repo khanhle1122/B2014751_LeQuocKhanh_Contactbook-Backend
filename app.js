@@ -14,7 +14,7 @@ app.use((err,req,res,next)=>{
 });
 app.use(cors());
 app.use(express.json());
-app.use("/api/contactsRouter");
+app.use("/api/contactsRouter",contactsRouter);
 app.get("/",(req,res)=>{
     res.json({message:"Welcome to contact book application."})
 });
